@@ -29,24 +29,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
 let slideAtual = 0;
-const carrossel = document.getElementById('carrossel');
-const slides = carrossel.querySelectorAll('img');
+const carrossel = document.getElementById("carrossel");
+const slides = carrossel.querySelectorAll("a");
 const totalSlides = slides.length;
 
 function atualizarSlide() {
-    const larguraSlide = slides[0].clientWidth;
-    carrossel.style.transform = `translateX(-${slideAtual * larguraSlide}px)`;
+  const larguraViewport = window.innerWidth;
+  carrossel.style.transform = `translateX(-${slideAtual * larguraViewport}px)`;
 }
 
 function avancarSlide() {
-    slideAtual = (slideAtual + 1) % totalSlides;
-    atualizarSlide();
+  slideAtual = (slideAtual + 1) % totalSlides;
+  atualizarSlide();
 }
 
 function voltarSlide() {
-    slideAtual = (slideAtual - 1 + totalSlides) % totalSlides;
-    atualizarSlide();
+  slideAtual = (slideAtual - 1 + totalSlides) % totalSlides;
+  atualizarSlide();
 }
 
-window.addEventListener('resize', atualizarSlide);
+window.addEventListener("resize", atualizarSlide);
+window.addEventListener("load", atualizarSlide);
