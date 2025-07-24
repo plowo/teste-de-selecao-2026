@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARI - Inscrições Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">AVI</div>
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">PÁGINA INICIAL</a></li>
+                    <li><a href="#conquistas">GRANDES CONQUISTAS</a></li>
+                    <li><a href="#inscricoes">INSCRIÇÕES</a></li>
+                    <li><a href="#entrevista">ENTREVISTA</a></li>
+                    <li><a href="#boletim">BOLETIM INFORMATIVO</a></li>
+                    <li><a href="#roteiro">ROTEIRO DE ESTUDOS</a></li>
+                    <li><a href="#contatos">CONTATOS</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="badge">Teste de seleção 2026</div>
+                <h1 class="hero-title">INSCRIÇÕES<br>ON-LINE</h1>
+                <p class="hero-subtitle">VOCÊ E SEU FILHO<br>DE OLHO NO FUTURO</p>
+                <a href="#inscricoes" class="cta-button">INSCREVA-SE</a>
+            </div>
+            <div class="hero-image">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjVGN0ZBIiByeD0iMTUiLz4KPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTAwIiByPSI0MCIgZmlsbD0iI0ZGQjU3QyIvPgo8Y2lyY2xlIGN4PSIyODAiIGN5PSIxMjAiIHI9IjMwIiBmaWxsPSIjRkZCNTdDIi8+CjxyZWN0IHg9IjEwMCIgeT0iMTgwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjNEE5MEUyIiByeD0iMTAiLz4KPHRleHQgeD0iMjAwIiB5PSIyMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkZhbWlseSBJbWFnZTwvdGV4dD4KPC9zdmc+"
+                    alt="Pai e filho sentados juntos olhando para o futuro">
+            </div>
+        </div>
+    </section>
+    <!-- Grandes Conquistas -->
+    <section class="conquistas">
+        <div class="fade"></div>
+        <div class="conq-container">
+            <h1>Grandes Conquistas</h1>
+            <div class="des">
+                <p>Alunos do Ari de Sá conquistam excelentes resultados tanto no cenário
+                    nacional quanto no internacional. <strong>Veja algumas:</strong></p>
+            </div>
+            <div class="carrossel-container">
+                <button class="seta esquerda" onclick="voltarSlide()">&#8592;</button>
+
+                <div class="carrossel" id="carrossel">
+                    <img src="src/img/ss (1).png" alt="Slide 1" />
+                    <img src="src/img/ss (2).png"alt="Slide 2" />
+                    <img src="src/img/ss (3).png" alt="Slide 3" />
+                    <img src="src/img/ss (4).png" alt="Slide 4" />
+                    <img src="src/img/ss (5).png" alt="Slide 5" />
+                    <img src="src/img/ss (6).png" alt="Slide 6" />
+                </div>
+
+                <button class="seta direita" onclick="avancarSlide()">&#8594;</button>
+            </div>
+        </div>
+        <div class="btn"><button></button></div>
+    </section>
+
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
