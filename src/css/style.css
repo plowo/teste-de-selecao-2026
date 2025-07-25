@@ -14,10 +14,11 @@ body {
 }
 
 /* Header Styles */
-.header {
+.headerof {
     background-color: #4A90E2;
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
 }
 
 .header-container {
@@ -27,6 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo {
@@ -323,70 +325,74 @@ body {
 
 /* Carrossel de imagens */
 .carousel-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .carousel-container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%; /* ou 100% * número de slides */
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    /* ou 100% * número de slides */
 }
 
 .carousel-slide {
-  flex: 0 0 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; /* isso garante centralização vertical também */
-  
-  box-sizing: border-box;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* isso garante centralização vertical também */
+
+    box-sizing: border-box;
 }
 
 .carousel-slide picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-slide img {
-  max-width: 80%;
-  height: auto;
-  
-  margin: 0 auto;
-  object-fit: cover;
+    max-width: 80%;
+    height: auto;
+
+    margin: 0 auto;
+    object-fit: cover;
 }
 
 /* Botões */
 .carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #ffffffcc;
-  border: none;
-  font-size: 2rem;
-  padding: 5px 15px;
-  cursor: pointer;
-  z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffffcc;
+    border: none;
+    font-size: 2rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    z-index: 10;
 }
 
 .carousel-btn.left {
-  left: 10px;
+    left: 10px;
 }
 
 .carousel-btn.right {
-  right: 10px;
+    right: 10px;
 }
+
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .carousel-slide {
-    height: 100%;
-  }
-  .carousel-slide img {
-    max-width: 90%;
-  }
+    .carousel-slide {
+        height: 100%;
+    }
+
+    .carousel-slide img {
+        max-width: 90%;
+    }
 }
 
 
@@ -443,14 +449,17 @@ body {
 
 /* cards inscrições */
 .unidades {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* CENTRALIZA na horizontal */
-  gap: 20px;
-  padding: 40px 20px 60px;
-  max-width: 900px; /* ou o tamanho desejado */
-  margin: 0 auto; /* CENTRALIZA a div toda */
-  background-color: #002f6c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* CENTRALIZA na horizontal */
+    gap: 20px;
+    padding: 40px 20px 60px;
+    max-width: 900px;
+    /* ou o tamanho desejado */
+    margin: 0 auto;
+    /* CENTRALIZA a div toda */
+    background-color: #002f6c;
 }
 
 .card {
@@ -460,9 +469,9 @@ body {
     max-width: 300px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    
+
     box-sizing: border-box;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -483,7 +492,7 @@ body {
     display: block;
     align-items: start;
     text-align: left;
-    
+
 }
 
 .card p {
@@ -509,13 +518,13 @@ body {
 }
 
 .card .tag {
-  background: #fcd800;
-  color: #001c44;
-  font-weight: lighter;
-  padding: 8px 16px;
-  border: #001c44;
-  align-self: first baseline;
-  transform: rotate(-8deg);
+    background: #fcd800;
+    color: #001c44;
+    font-weight: lighter;
+    padding: 8px 16px;
+    border: #001c44;
+    align-self: first baseline;
+    transform: rotate(-8deg);
 }
 
 .card .tag:hover {
@@ -527,7 +536,7 @@ body {
     text-transform: uppercase;
     font-size: 10px;
     color: #003c87;
-    margin:0;
+    margin: 0;
     padding-top: 0;
 }
 
@@ -541,73 +550,214 @@ body {
     background-repeat: no-repeat;
 
 }
+
 /* boletim informativo */
-        .boletim-section {
-            align-items: start;
-            margin: 0 auto;
-            background-color: white;
-            border: none;
-            overflow: hidden;
-            
-        }
-        .boletim-section .header {
-            border: none;
-            background-color: white;
-        }
-        .boletim-section .header div {
-            background-color: white;
-            padding: 20px 30px;
-            text-align: left;
-        }
+.boletim-section {
+    align-items: start;
+    margin: 0 auto;
+    background-color: white;
+    border: none;
+    overflow: hidden;
 
-        .boletim-section .titulo h1 {
-            color: #1e5aa8;
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-align: left;
-        }
+}
 
-        .boletim-section .subtitulo p {
-            color: #666;
-            font-size: 16px;
-            margin-bottom: 15px;
-            line-height: 1.4;
-            text-align: left;
-        }
+.boletim-section .header {
+    border: none;
+    background-color: white;
+}
 
-        .boletim-section .botao-container div {
-            margin-bottom: 10px;
-            text-align: left;
-        }
+.boletim-section .header div {
+    background-color: white;
+    padding: 20px 30px;
+    text-align: left;
+}
 
-        .boletim-section .botao-confira button {
-            background-color: #ffc107;
-            color: #333;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 14px;
-            cursor: pointer;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-            text-align: left;
-            display: inline-block;
-        }
+.boletim-section .titulo h1 {
+    color: #1e5aa8;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
 
-        .boletim-section .botao-confira button:hover {
-            background-color: #e0a800;
-        }
+.boletim-section .subtitulo p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    text-align: left;
+}
 
-        .boletim-section .preview-container div {
-            background-color: #e8e8e8;
-            padding: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 250px;
-        }
+.boletim-section .botao-container div {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.boletim-section .botao-confira button {
+    background-color: #ffc107;
+    color: #333;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-align: left;
+    display: inline-block;
+}
+
+.boletim-section .botao-confira button:hover {
+    background-color: #e0a800;
+}
+
+.boletim-section .preview-container div {
+    background-color: #e8e8e8;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+
+/* Roteiro de Estudos */
+.roteiro-estudos {
+    text-align: center;
+    padding: 40px 20px;
+    background: url(/src/img/bgroteiro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.roteiro-estudos h2 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.roteiro-estudos h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffd600;
+    margin-bottom: 40px;
+}
+
+.roteiro-estudos .caminho {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.roteiro-estudos .card {
+    background: white;
+    color: #0a2c66;
+    padding: 20px 30px;
+    min-width: 400px;
+    min-height: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    align-items: start;
+    text-align: left;
+    position: relative;
+}
+
+.roteiro-estudos .card p {
+    font-size: xx-large;
+}
+
+.roteiro-estudos .card-1 {
+    right: 300px;
+}
+
+.roteiro-estudos .card-2 {
+    left: 300px;
+}
+
+.roteiro-estudos .card-3 {
+    right: 300px;
+}
+
+.roteiro-estudos .card-4 {
+    left: 300px;
+}
+
+.roteiro-estudos .card button {
+    margin-top: 15px;
+    padding: 20px 40px;
+    background: #ffd600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.roteiro-estudos .card button:hover {
+    background: #ffb800;
+}
+
+
+/* Conexões entre os cards */
+.roteiro-estudos .caminho::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: white;
+    height: 80%;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Contatos */
+.contatos {
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    margin: 0 auto;
+    
+    justify-content: space-between;
+    
+    gap: 20px 0;
+
+    background-color: #003c87;
+   
+}
+
+.contatos div {
+    flex: 1 1 calc(25% - 10px);
+    margin-top: 25px;
+    /* 4 cards por linha */
+    text-align: center;
+    justify-items: center;
+    
+    border-radius: 6px;
+    padding: 10px;
+    
+}
+
+.contatos div h1 {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 50%;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 200;
+    font-size: 1em;
+    color: #001c44;
+    margin-bottom: 6px;
+}
+.contatos div p {
+    color: #fff;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+}
 
 /* Decorative Elements */
 .hero::before {
@@ -619,6 +769,48 @@ body {
     height: 200%;
     background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 0%, transparent 70%);
     z-index: 1;
+}
+
+@media (max-width: 900px) {
+    .roteiro-estudos .card-1 {
+        right: 0px;
+    }
+
+    .roteiro-estudos .card-2 {
+        left: 0px;
+    }
+
+    .roteiro-estudos .card-3 {
+        right: 0px;
+    }
+
+    .roteiro-estudos .card-4 {
+        left: 0px;
+    }
+
+    .roteiro-estudos.caminho {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .roteiro-estudos.caminho::before {
+        display: none;
+    }
+
+    .roteiro-estudos .card {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .roteiro-estudos .card button {
+        width: 100%;
+        font-size: 0.9em;
+        margin-top: 10px;
+        padding: 14px 24px;
+        text-align: center;
+        align-items: center;
+    }
 }
 
 /* Responsive Design */
@@ -707,6 +899,50 @@ body {
         width: 90%;
         height: auto;
     }
+
+    .roteiro-estudos .card-1 {
+        right: 0px;
+    }
+
+    .roteiro-estudos .card-2 {
+        left: 0px;
+    }
+
+    .roteiro-estudos .card-3 {
+        right: 0px;
+    }
+
+    .roteiro-estudos .card-4 {
+        left: 0px;
+    }
+
+    .roteiro-estudos.caminho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .roteiro-estudos.caminho::before {
+        display: none;
+    }
+
+    .roteiro-estudos .card {
+        width: 60%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .roteiro-estudos .card button {
+        width: 70%;
+        font-size: 0.8em;
+        margin-top: 8px;
+        padding: 12px 22px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .roteiro-estudos .card p {
+        font-size: 1.5em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -730,4 +966,29 @@ body {
     .conquistas .fade {
         background-size: cover;
     }
+
+    .roteiro-estudos.caminho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .roteiro-estudos.caminho::before {
+        display: none;
+    }
+
+    .roteiro-estudos .card {
+        width: 20%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .roteiro-estudos .card button {
+        width: 70%;
+        font-size: 0.6em;
+        margin-top: 5px;
+        padding: 10px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
 }
