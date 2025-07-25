@@ -14,7 +14,8 @@
     <header class="header">
         <div class="header-container">
             <div class="logo">AVI</div>
-            <nav>
+            <nav class="nav-container">
+                <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home">PÁGINA INICIAL</a></li>
                     <li><a href="#conquistas">GRANDES CONQUISTAS</a></li>
@@ -24,7 +25,6 @@
                     <li><a href="#roteiro">ROTEIRO DE ESTUDOS</a></li>
                     <li><a href="#contatos">CONTATOS</a></li>
                 </ul>
-                <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
             </nav>
         </div>
     </header>
@@ -38,19 +38,24 @@
                 <p class="hero-subtitle">VOCÊ E SEU FILHO<br>DE OLHO NO FUTURO</p>
                 <a href="#inscricoes" class="cta-button">INSCREVA-SE</a>
             </div>
+            <!-- === ALTERAÇÕES NO HTML PARA HOVER DA IMAGEM === -->
             <div class="hero-image">
-                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI0MDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjRjVGN0ZBIiByeD0iMTUiLz4KPGNpcmNsZSBjeD0iMTUwIiBjeT0iMTAwIiByPSI0MCIgZmlsbD0iI0ZGQjU3QyIvPgo8Y2lyY2xlIGN4PSIyODAiIGN5PSIxMjAiIHI9IjMwIiBmaWxsPSIjRkZCNTdDIi8+CjxyZWN0IHg9IjEwMCIgeT0iMTgwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjNEE5MEUyIiByeD0iMTAiLz4KPHRleHQgeD0iMjAwIiB5PSIyMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPkZhbWlseSBJbWFnZTwvdGV4dD4KPC9zdmc+"
-                    alt="Pai e filho sentados juntos olhando para o futuro">
+                <!-- NOVO: Container wrapper para controlar hover -->
+                <div class="image-container">
+                    <!-- MODIFICADO: Adicionada classe 'image-default' -->
+                    <img class="image-default" src="src/img/FRAME1.png">
+                    <!-- NOVO: Segunda imagem para efeito hover -->
+                    <img class="image-hover" src="src/img/FRAME2.png" alt="Estado hover da imagem">
+                </div>
             </div>
+            <!-- === FIM DAS ALTERAÇÕES NO HTML === -->
         </div>
     </section>
     <!-- Grandes Conquistas -->
     <section class="conquistas">
 
         <div class="fade"></div>
-          <div class="nuvem nuvem-esquerda">
-    <img src="src/img/nuvem.svg" alt="Nuvem decorativa esquerda">
-  </div>
+
         <div class="conq-container">
 
             <h1>Grandes Conquistas</h1>
@@ -89,17 +94,71 @@
         </div>
         <div class="btn">
 
-            <a>
+            <a href="https://servicos.aridesa.com.br/grandesconquistas" target="_blank">
                 <p>VER MAIS</p>
             </a>
 
         </div>
 
-        <div class="nuvem nuvem-direita">
-            <img src="/src/img/nuvem.svg" alt="Nuvem direita" />
-        </div>
-    </section>
 
+    </section>
+    <div class="fadeblue"></div>
+    <section class="ins">
+
+        <div class="txt">
+            <h1>INSCRIÇÕES</h1>
+            <h3>----NOVOS ALUNOS-----</h3>
+            <p>Selecione abaixo a sede que deseja fazer sua inscrição:</p>
+        </div>
+        <div class="unidades">
+            <div class="card">
+                <span class="tag">Nova Sede</span>
+                <h3>ARI LUCIANO CARNEIRO</h3>
+                <p>🧒 Da educação infantil ao 1º ano do ensino fundamental</p>
+                <p>📍 R. Santa Quitéria, 50</p>
+                <a href="#" class="btn">Inscreva-se</a>
+            </div>
+
+            <div class="card">
+                <h3>ARI ALDEOTA</h3>
+                <p>📚 Do 2º ano do ensino fundamental ao ensino médio</p>
+                <p>📍 Rua Monsenhor Catão, 1655</p>
+                <a href="#" class="btn">Inscreva-se</a>
+            </div>
+            <div class="card">
+                <h3>ARI ALDEOTA</h3>
+                <p>📚 Do 2º ano do ensino fundamental ao ensino médio</p>
+                <p>📍 Rua Monsenhor Catão, 1655</p>
+                <a href="#" class="btn">Inscreva-se</a>
+            </div>
+            <div class="card">
+                <h3>ARI ALDEOTA</h3>
+                <p>📚 Do 2º ano do ensino fundamental ao ensino médio</p>
+                <p>📍 Rua Monsenhor Catão, 1655</p>
+                <a href="#" class="btn">Inscreva-se</a>
+            </div>
+            <div class="card">
+                <h3>ARI ALDEOTA</h3>
+                <p>📚 Do 2º ano do ensino fundamental ao ensino médio</p>
+                <p>📍 Rua Monsenhor Catão, 1655</p>
+                <a href="#" class="btn">Inscreva-se</a>
+            </div>
+            <div class="card">
+                <h3>ARI ALDEOTA</h3>
+                <p>📚 Do 2º ano do ensino fundamental ao ensino médio</p>
+                <p>📍 Rua Monsenhor Catão, 1655</p>
+                <a href="#" class="btn">Inscreva-se</a>
+            </div>
+            <div class="card">
+                <h3>ARI ALDEOTA</h3>
+                <p>📚 Do 2º ano do ensino fundamental ao ensino médio</p>
+                <p>📍 Rua Monsenhor Catão, 1655</p>
+                <a href="#" class="btn">Inscreva-se</a>
+            </div>
+        </div>
+
+    </section>
+    <div class="fadeblue1"></div>
 
     <script src="src/js/script.js"></script>
 </body>

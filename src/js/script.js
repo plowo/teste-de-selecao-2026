@@ -36,18 +36,18 @@ const slides = carrossel.querySelectorAll("a");
 const totalSlides = slides.length;
 
 function atualizarSlide() {
-  const larguraViewport = window.innerWidth;
-  carrossel.style.transform = `translateX(-${slideAtual * larguraViewport}px)`;
+    const larguraViewport = window.innerWidth;
+    carrossel.style.transform = `translateX(-${slideAtual * larguraViewport}px)`;
 }
 
 function avancarSlide() {
-  slideAtual = (slideAtual + 1) % totalSlides;
-  atualizarSlide();
+    slideAtual = (slideAtual + 1) % totalSlides;
+    atualizarSlide();
 }
 
 function voltarSlide() {
-  slideAtual = (slideAtual - 1 + totalSlides) % totalSlides;
-  atualizarSlide();
+    slideAtual = (slideAtual - 1 + totalSlides) % totalSlides;
+    atualizarSlide();
 }
 
 window.addEventListener("resize", atualizarSlide);
