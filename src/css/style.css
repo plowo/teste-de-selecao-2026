@@ -451,25 +451,42 @@ body {
     max-width: 300px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    margin-top: 0;
+    
     box-sizing: border-box;
-    text-align: center;
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .card h3 {
-    font-size: 1.4rem;
+    text-align: center;
+    font-size: 1.8rem;
     color: #002f6c;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+    padding: 5px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+}
+
+.card .texto {
+    display: block;
+    align-items: start;
+    text-align: left;
+    
 }
 
 .card p {
-    font-size: 0.9rem;
-    color: #333;
-    margin: 5px 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #050228;
+    margin-top: 0;
+    line-height: 1.2;
+    padding: 10px;
+    text-align: left;
+    padding: 10;
 }
 
 .card .btn {
@@ -485,11 +502,24 @@ body {
 .card .tag {
   background: #fcd800;
   color: #001c44;
-  font-weight: bold;
-  padding: 4px 8px;
+  font-weight: lighter;
+  padding: 8px 16px;
   border: #001c44;
   align-self: first baseline;
   transform: rotate(-8deg);
+}
+
+.card .tag:hover {
+    background: #001c44;
+    color: #fff;
+}
+
+.card h5 {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #003c87;
+    margin:0;
+    padding-top: 0;
 }
 
 .fadeblue1 {
@@ -502,6 +532,73 @@ body {
     background-repeat: no-repeat;
 
 }
+/* boletim informativo */
+        .boletim-section {
+            align-items: start;
+            margin: 0 auto;
+            background-color: white;
+            border: none;
+            overflow: hidden;
+            
+        }
+        .boletim-section .header {
+            border: none;
+            background-color: white;
+        }
+        .boletim-section .header div {
+            background-color: white;
+            padding: 20px 30px;
+            text-align: left;
+        }
+
+        .boletim-section .titulo h1 {
+            color: #1e5aa8;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .boletim-section .subtitulo p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            text-align: left;
+        }
+
+        .boletim-section .botao-container div {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .boletim-section .botao-confira button {
+            background-color: #ffc107;
+            color: #333;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .boletim-section .botao-confira button:hover {
+            background-color: #e0a800;
+        }
+
+        .boletim-section .preview-container div {
+            background-color: #e8e8e8;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 250px;
+        }
 
 /* Decorative Elements */
 .hero::before {
