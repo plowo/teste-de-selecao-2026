@@ -66,31 +66,38 @@
             </div>
 
         </div>
-        <div class="carrossel-container">
+        <div class="carousel-wrapper">
+            <button class="carousel-btn left" onclick="prevSlide()">&#10094;</button>
 
-            <button class="seta esquerda" onclick="voltarSlide()">&#8592;</button>
+            <div class="carousel-container" id="carousel">
+                <a href="https://aridesa.com.br/wp-content/uploads/2025/06/ASA-0036-25-AN-PRIMEIROS-LUGARES-UECE-2025-2-OP-6Colx53cm-V9.pdf" target="_blank" class="carousel-slide">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="src/img/carrossel/mobile/mobile-1.png">
+                        <img src="src/img/carrossel/web/web-1.png" alt="Banner 1">
+                    </picture>
+                </a>
 
-            <div class="carrossel" id="carrossel">
-                <a href="https://aridesa.com.br/wp-content/uploads/2025/02/ASA-0007-25-AN-MEDICINA-UFCA-2025-OP-6colx53cm.pdf"
-                    target="_blank"><img src="src/img/ss (1).png" alt="Slide 1" /></a>
-                <a
-                    href="https://aridesa.com.br/wp-content/uploads/2025/02/ASA-0005-25-ANUNCIO-MEDICINA-UFC-2025-OTIMISTA-55x39cm.pdf"><img
-                        src="src/img/ss (2).png" alt="Slide 2" /></a>
-                <a
-                    href="https://aridesa.com.br/wp-content/uploads/2025/03/ASA-0012-25-AN-DIREITO-UECE-2025-OP-6colx53cm-V4.pdf"><img
-                        src="src/img/ss (3).png" alt="Slide 3" /></a>
-                <a
-                    href="https://aridesa.com.br/wp-content/uploads/2025/02/ASA-0006-25-ANUNCIO-DIREITO-UFC-2025_compressed.pdf"><img
-                        src="src/img/ss (4).png" alt="Slide 4" /></a>
-                <a
-                    href="https://aridesa.com.br/wp-content/uploads/2025/03/ASA-0011-25-AN-MEDICINA-UECE-2025-OP-6colx53cm-V12.pdf"><img
-                        src="src/img/ss (5).png" alt="Slide 5" /></a>
-                <a
-                    href="https://aridesa.com.br/wp-content/uploads/2025/02/ASA-0003-25-AN-OLIMPIADA-RIO-PLATENSE-DE-MATEMATICA-VOLTA-5COLX40CM-OP_23-02-2025.pdf"><img
-                        src="src/img/ss (6).png" alt="Slide 6" /></a>
+                <a href="https://exemplo2.com" target="_blank" class="carousel-slide">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="src/img/carrossel/mobile/mobile-2.png">
+                        <img src="src/img/carrossel/web/web-2.png" alt="Banner 2">
+                    </picture>
+                </a>
+                <a href="https://exemplo2.com" target="_blank" class="carousel-slide">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="src/img/carrossel/mobile/mobile-3.png">
+                        <img src="src/img/carrossel/web/web-3.png" alt="Banner 2">
+                    </picture>
+                </a>
+                <a href="https://exemplo2.com" target="_blank" class="carousel-slide">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="src/img/carrossel/mobile/mobile-4.png">
+                        <img src="src/img/carrossel/web/web-4.png" alt="Banner 2">
+                    </picture>
+                </a>
             </div>
 
-            <button class="seta direita" onclick="avancarSlide()">&#8594;</button>
+            <button class="carousel-btn right" onclick="nextSlide()">&#10095;</button>
         </div>
         <div class="btn">
 
@@ -176,29 +183,29 @@
     </section>
     <div class="fadeblue1"></div>
     <section class="boletim-section">
-        
-            <div class="header">
-                <div>
-                    <div class="titulo">
-                        <h1>BOLETIM INFORMATIVO</h1>
-                    </div>
-                    <div class="subtitulo">
-                        <p>Confira ou faça o download do nosso boletim informativo</p>
-                    </div>
-                    <div class="botao-container">
-                        <div class="botao-confira">
-                            <button>CLIQUE E CONFIRA</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="preview-container">
-                <div>
-                    <!-- Espaço reservado para o documento que será inserido posteriormente -->
+        <div class="header">
+            <div>
+                <div class="titulo">
+                    <h1>BOLETIM INFORMATIVO</h1>
+                </div>
+                <div class="subtitulo">
+                    <p>Confira ou faça o download do nosso boletim informativo</p>
+                </div>
+                <div class="botao-container">
+                    <div class="botao-confira">
+                        <button>CLIQUE E CONFIRA</button>
+                    </div>
                 </div>
             </div>
-        
+        </div>
+
+        <div class="preview-container">
+            <div>
+                <!-- Espaço reservado para o documento que será inserido posteriormente -->
+            </div>
+        </div>
+
     </section>
     <script src="src/js/script.js"></script>
 </body>

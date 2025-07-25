@@ -30,25 +30,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-let slideAtual = 0;
-const carrossel = document.getElementById("carrossel");
-const slides = carrossel.querySelectorAll("a");
-const totalSlides = slides.length;
+  let currentSlide = 0;
+  const totalSlides = document.querySelectorAll('.carousel-slide').length;
+  const carousel = document.getElementById('carousel');
 
-function atualizarSlide() {
-    const larguraViewport = window.innerWidth;
-    carrossel.style.transform = `translateX(-${slideAtual * larguraViewport}px)`;
+  function updateCarousel() {
+    carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel();
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  }
+
+
+function showSlide(i) {
+  carousel.style.transform = `translateX(-${i * 100}%)`;
 }
 
-function avancarSlide() {
-    slideAtual = (slideAtual + 1) % totalSlides;
-    atualizarSlide();
-}
-
-function voltarSlide() {
-    slideAtual = (slideAtual - 1 + totalSlides) % totalSlides;
-    atualizarSlide();
-}
-
-window.addEventListener("resize", atualizarSlide);
-window.addEventListener("load", atualizarSlide);
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+}, 3000); // 5 segundos

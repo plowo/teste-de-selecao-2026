@@ -322,66 +322,75 @@ body {
 
 
 /* Carrossel de imagens */
-.carrossel-container {
-    position: relative;
-    justify-content: space-between;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
-.carrossel {
-    display: flex;
-    margin: 10px;
-    padding: 20px;
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* ou 100% * número de slides */
+}
 
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
+.carousel-slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* isso garante centralização vertical também */
+  
+  box-sizing: border-box;
+}
+
+.carousel-slide picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-slide img {
+  max-width: 80%;
+  height: auto;
+  
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+/* Botões */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffffffcc;
+  border: none;
+  font-size: 2rem;
+  padding: 5px 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .carousel-slide {
     height: 100%;
+  }
+  .carousel-slide img {
+    max-width: 90%;
+  }
 }
 
-.carrossel a {
-    flex: 0 0 100vw;
-    /* Cada slide ocupa 100% da viewport */
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
 
-.carrossel img {
-    width: 80%;
-    /* Tamanho da imagem dentro do slide */
-    height: auto;
-    max-height: 90%;
-    object-fit: contain;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
 
-.seta {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 3rem;
-    color: #003c87;
-    background: none;
-    border: none;
-    cursor: pointer;
-
-    padding: 10px;
-}
-
-.esquerda {
-    left: 20px;
-}
-
-.direita {
-    right: 20px;
-}
 
 /* Inscrições */
 .ins {
