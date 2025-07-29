@@ -1,0 +1,25 @@
+{
+  "name": "landing-page-test",
+  "version": "1.0.0",
+  "description": "Projeto em HTML, CSS e JavaScript puro para a criação de uma Landing Page para o **teste de seleção** da escola de 2026 feito pelo time de Web do colégio [Ari de Sá Cavalcante](https://aridesa.com.br).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plowo/teste-de-selecao-2026.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plowo/teste-de-selecao-2026/issues"
+  },
+  "homepage": "https://github.com/plowo/teste-de-selecao-2026#readme",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "magic.css": "^1.4.8",
+    "scrollreveal": "^4.0.9"
+  }
+}

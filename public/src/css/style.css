@@ -1,0 +1,1279 @@
+@import url('https://fonts.googleapis.com/css2?family=Comico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+@font-face {
+    font-family: 'Comico';
+    src: url('../fonts/Comico-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    src: url('../fonts/EncodeSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Encode Sans Bold';
+    src: url('../fonts/EncodeSans-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka';
+    src: url('../fonts/Fredoka-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fredoka Bold';
+    src: url('../fonts/Fredoka-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --cor: #093067;
+    --titulos: 'Comico', 'Arial', sans-serif;
+    --textos1: 'Fredoka', 'Arial', sans-serif;
+    --textos2: 'Encode Sans', 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--titulos);
+
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999999;
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-image: url(/public/src/img/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    margin: -40px 0 0 -100px;
+}
+
+#status img {
+    text-align: center;
+    margin-top: -80px;
+}
+
+/* Header Styles */
+.headerof {
+    background-color: #4A90E2;
+    font-family: var(--titulos);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    transition: background-color 0.3s ease;
+    z-index: 100;
+
+}
+
+.headerof img {
+    width: 50%;
+}
+
+/* Classe para quando a página for rolada */
+.header-scrolled {
+    background-color: rgba(38, 110, 204, 0.4);
+    /* Menos opacidade */
+    transition: background-color 0.5s ease;
+    backdrop-filter: blur(10px);
+    height: 60px;
+}
+
+.header-scrolled img {
+    width: 30%;
+    padding: 0;
+}
+
+.header-scrolled li a {
+    margin-bottom: 2px;
+    padding-bottom: 0;
+}
+
+/*--------*/
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo {
+    padding: 10px;
+
+}
+
+.nav-container {
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    transition: opacity 0.3s ease;
+    padding-right: 5px;
+    padding-bottom: 5px;
+
+
+}
+
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background: #EEF0F6;
+
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-content {
+    z-index: 2;
+    align-items: center;
+    text-align: center;
+}
+
+.badge {
+    background-color: #FFF3CD;
+    border: 1px solid #FFEAA7;
+    border-radius: 20px;
+    padding: 8px 16px;
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--textos2);
+    gap: 8px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: #856404;
+}
+
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-family: var(--titulos);
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    font-family: var(--textos1);
+    color: #5a6c7d;
+    margin-bottom: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button {
+    background-color: #FFD700;
+    color: #2c3e50;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive, 'Arial', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #FFC700;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* === ALTERAÇÕES PARA HOVER DA IMAGEM === */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* NOVO: Container para controlar o hover */
+.hero-image .image-container {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    width: 530px;
+    height: 400px;
+    transition: transform 0.3s ease;
+    /* NOVO: Transições suaves */
+
+    /* NOVO: Responsivo */
+}
+
+/* NOVO: Efeito de elevação no hover */
+.hero-image .image-container:hover {
+
+    transform: translateY(-15px);
+    /* NOVO: Move imagem para cima */
+
+}
+
+/* MODIFICADO: Tamanho e posicionamento fixos para ambas as imagens */
+.hero-image img {
+    width: 100%;
+    /* NOVO: Largura total do container */
+    height: 100%;
+    /* NOVO: Altura total do container */
+    object-fit: contain;
+    /* NOVO: Mantém proporção sem distorção */
+    object-position: center;
+    /* NOVO: Centraliza a imagem */
+    display: block;
+    transition: opacity 0.6s ease;
+    /* NOVO: Transição suave entre imagens */
+}
+
+/* NOVO: Estilo para imagem de hover */
+.hero-image .image-hover {
+    position: absolute;
+    top: 0;
+    /* NOVO: Posicionamento absoluto */
+    left: 0;
+    /* NOVO: Posicionamento absoluto */
+
+    opacity: 0;
+    /* NOVO: Invisível por padrão */
+    transition: opacity 0.8s ease-in-out;
+    /* NOVO: Transição suave */
+    object-fit: contain;
+    /* NOVO: Mesmo comportamento de redimensionamento */
+    /* NOVO: Centralização igual */
+}
+
+/* NOVO: Mostra imagem de hover ao passar mouse */
+.hero-image .image-container:hover .image-hover {
+
+    opacity: 1;
+    /* NOVO: Torna visível no hover */
+}
+
+/* NOVO: Esconde imagem padrão no hover */
+.hero-image .image-container:hover .image-default {
+    opacity: 0;
+    /* NOVO: Torna invisível no hover */
+}
+
+/* === FIM DAS ALTERAÇÕES PARA HOVER === */
+
+/* Grandes Conquistas */
+
+.conquistas .fade {
+    background: url("/src/img/fade.svg");
+    min-height: 60px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.conq-container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.conq-container h1 {
+    margin: 5px;
+    font-family: var(--titulos);
+    padding-bottom: 5px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #164D9C;
+
+
+}
+
+.conq-container .des {
+    display: flex;
+    font-family: var(--textos2);
+    padding-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* botão ver mais */
+.conquistas .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.conquistas .btn a {
+    margin: 40px;
+    background: #FFD400;
+    border: none;
+
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+
+
+    width: 349px;
+    height: 63px;
+
+
+    text-decoration: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.conquistas .btn a p {
+    font-family: "Fredoka", 'Arial', sans-serif;
+    font-weight: 600;
+    color: #090965;
+    font-size: 22px;
+
+}
+
+
+
+/* Carrossel de imagens */
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    /* ou 100% * número de slides */
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* isso garante centralização vertical também */
+
+    box-sizing: border-box;
+}
+
+.carousel-slide picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide img {
+    max-width: 80%;
+    height: auto;
+
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+/* Botões */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ffffffcc;
+    border: none;
+    font-size: 2rem;
+    padding: 5px 15px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-btn.left {
+    left: 10px;
+}
+
+.carousel-btn.right {
+    right: 10px;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .carousel-slide {
+        height: 100%;
+    }
+
+    .carousel-slide img {
+        max-width: 90%;
+    }
+}
+
+
+
+
+/* Inscrições */
+.ins {
+    margin: 0;
+    padding: 0;
+    background-color: #002F6C;
+}
+
+.fadeblue {
+    background: url("/src/img/fadeblue.svg");
+    min-height: 60px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.txt {
+    background-color: #002F6C;
+    align-items: center;
+    justify-content: space-around;
+
+    text-align: center;
+}
+
+.ins h1 {
+    font-size: 50px;
+    font-family: var(--titulos);
+    padding-top: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.ins h3 {
+    font-size: 25px;
+    font-family: var(--titulos);
+    font-weight: lighter;
+    color: #FACC15;
+    margin: 10px;
+}
+
+.ins p {
+    font-family: var(--textos2);
+    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 20px;
+    color: #FFF3CD;
+
+}
+
+/* cards inscrições */
+.unidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* CENTRALIZA na horizontal */
+    gap: 20px;
+    padding: 40px 20px 60px;
+    max-width: 900px;
+    /* ou o tamanho desejado */
+    margin: 0 auto;
+    /* CENTRALIZA a div toda */
+    background-color: #002f6c;
+}
+
+.card {
+    flex: 0 1 calc(45%);
+    background-color: white;
+    width: 400px;
+    max-width: 300px;   
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    border-radius: 12px;
+
+    color: white;
+    z-index: 0;
+    overflow: hidden;
+
+}
+
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  border: 12px solid transparent;
+  background: linear-gradient(90deg, #facc15, #facc15) border-box;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0) border-box;
+  -webkit-mask-composite: destination-out;
+          mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+  animation: borderDraw 1s forwards ease;
+}
+
+@keyframes borderDraw {
+  0% {
+    clip-path: inset(100% 0 0 0); /* de cima pra baixo */
+  }
+  25% {
+    clip-path: inset(0 100% 0 0); /* direita */
+  }
+  50% {
+    clip-path: inset(0 0 100% 0); /* baixo */
+  }
+  75% {
+    clip-path: inset(0 0 0 100%); /* esquerda */
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* tudo visível */
+}
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #002f6c;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+}
+
+.card .texto {
+    display: flex;
+    align-items: start;
+    color: #002f6c;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.icontxt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 10px 5px 20px;
+
+}
+
+.icontxt p {
+    margin: 0;
+    padding: 0;
+    color: #002f6c;
+}
+
+.card p {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #002f6c;
+    margin-top: 0;
+    line-height: 1.2;
+    padding: 10px;
+    text-align: left;
+    padding: 10;
+}
+
+.card .btn {
+    margin: 10px;
+    background-color: #002f6c;
+    color: white;
+    padding: 10px 15px;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: var(--titulos);
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card .tag {
+    background: #fcd800;
+    color: #001c44;
+    font-family: var(--titulos);
+    font-weight: lighter;
+    padding: 8px 16px;
+    border: #001c44;
+    align-self: first baseline;
+    transform: rotate(-8deg);
+}
+
+
+.card h5 {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #003c87;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+    font-family: var(--titulos);
+}
+
+.fadeblue1 {
+    background: url("/src/img/fadeblue.svg");
+    min-height: 60px;
+    width: 100%;
+    transform: rotate(180deg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* boletim informativo */
+.boletim-section {
+    position: relative;
+
+
+    background-color: white;
+    border: none;
+    overflow: hidden;
+    height: 650px;
+
+}
+
+.boletim-section .header {
+    border: none;
+    background-color: white;
+    margin-left: 25px;
+}
+
+.boletim-section .header div {
+    background-color: white;
+    padding: 10px 5px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.boletim-section .titulo h1 {
+    color: #1e5aa8;
+    font-size: 32px;
+    font-weight: bold;
+
+    text-align: left;
+}
+
+.boletim-section .subtitulo p {
+    color: #666;
+    font-size: 18px;
+    font-family: var(--textos2);
+
+    margin: 0;
+
+}
+
+.boletim-section .botao-container div {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.boletim-section .botao-confira button {
+    background-color: #ffc107;
+    color: #333;
+    padding: 12px 25px;
+    border: none;
+    position: absolute;
+    left: 40px;
+    margin: 0;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: var(--titulos);
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 45px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    text-align: left;
+
+}
+
+.boletim-section .botao-confira button:hover {
+    background-color: #e0a800;
+    padding: 20px;
+    transition: 0.7s ease;
+}
+
+.fp-iframe {
+
+    border: 1px solid lightgray;
+    width: 50%;
+    left: 800px;
+    top: 120px;
+    position: absolute;
+    height: 500px;
+    bottom: 0;
+
+}
+
+/* Roteiro de Estudos */
+.roteiro-estudos {
+    text-align: center;
+    padding: 40px 40px;
+    background: var(--cor);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+
+}
+
+.roteiro-estudos h2 {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.roteiro-estudos h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffd600;
+    margin-bottom: 40px;
+}
+
+.roteiro-estudos .caminho {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.roteiro-estudos .card {
+    background: white;
+    color: #0a2c66;
+    padding: 20px 30px;
+
+    min-width: 450px;
+    min-height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    align-items: start;
+    text-align: left;
+    position: relative;
+}
+
+.roteiro-estudos .card p {
+    font-size: 24px;
+    color: var(--cor);
+}
+
+.roteiro-estudos .card-1 {
+    right: 300px;
+}
+
+.roteiro-estudos .card-2 {
+    left: 300px;
+}
+
+.roteiro-estudos .card-3 {
+    right: 300px;
+}
+
+.roteiro-estudos .card-4 {
+    left: 300px;
+
+}
+
+.roteiro-estudos .card button {
+    margin-top: 15px;
+    padding: 20px 40px;
+    background: #ffd600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: var(--titulos);
+    text-transform: uppercase;
+}
+
+.roteiro-estudos .card button:hover {
+    background: #ffb800;
+}
+
+.roteiro-estudos .card-4 p {
+    font-size: 2em;
+}
+
+/* Conexões entre os cards */
+.roteiro-estudos .caminho::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: white;
+    height: 80%;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.divisoria {
+    background-color: #062249;
+    width: 100%;
+    height: 1px;
+}
+
+/* Contatos */
+.contatos {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    margin: 0 auto;
+    font-size: small;
+    padding: 20px;
+    justify-content: space-between;
+
+    gap: 10px 0;
+
+    background: var(--cor);
+
+}
+
+.contatos div {
+    flex: 1 1 calc(25% - 10px);
+    margin-top: 25px;
+    /* 4 cards por linha */
+    text-align: center;
+    justify-items: center;
+
+    border-radius: 6px;
+    padding: 5px;
+
+}
+
+.contatos a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.contatos div h1 {
+    background-color: #fff;
+    border-radius: 5px;
+
+    font-family: 'Encode Sans', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    color: #001c44;
+    margin-bottom: 6px;
+    padding: 0 8px 0 8px;
+}
+
+
+
+.contatos div p {
+    color: #fff;
+    font-family: 'Encode Sans', 'Arial', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--cor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 200px;
+
+}
+
+footer .logo {
+    margin-right: 20px;
+}
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+footer i {
+    color: #fff;
+    margin: 4px;
+
+
+}
+
+footer .linkedin {
+    margin-left: -10px;
+}
+
+/* Decorative Elements */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 0%, transparent 70%);
+    z-index: 1;
+}
+
+@media (max-width: 900px) {
+    .roteiro-estudos .card-1 {
+        right: 0px;
+    }
+
+    .roteiro-estudos .card-2 {
+        left: 0px;
+    }
+
+    .roteiro-estudos .card-3 {
+        right: 0px;
+    }
+
+    .roteiro-estudos .card-4 {
+        left: 0px;
+    }
+
+    .roteiro-estudos.caminho {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .roteiro-estudos.caminho::before {
+        display: none;
+    }
+
+    .roteiro-estudos .card {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .roteiro-estudos .card button {
+        width: 100%;
+        font-size: 0.9em;
+        margin-top: 10px;
+        padding: 14px 24px;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: calc(100% + 15px);
+        left: 0;
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        background-color: #4A90E2;
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li a {
+        font-size: 14px;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: left;
+    }
+
+    .nav-menu li:last-child a {
+        border-bottom: none;
+    }
+
+    .header-container {
+        position: relative;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .conquistas .fade {
+        background-size: cover;
+    }
+
+    .seta {
+        font-size: 2rem;
+    }
+
+    .carrossel a {
+        width: 100vw;
+    }
+
+    .carrossel img {
+        object-fit: contain;
+    }
+
+    .card {
+        flex: 0 1 100%;
+        /* 1 por linha */
+        aspect-ratio: 1 / 1;
+        /* ainda quadrado no mobile */
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .roteiro-estudos .card-1 {
+        right: 0px;
+    }
+
+    .roteiro-estudos .card-2 {
+        left: 0px;
+    }
+
+    .roteiro-estudos .card-3 {
+        right: 0px;
+    }
+
+    .roteiro-estudos .card-4 {
+        left: 0px;
+    }
+
+    .roteiro-estudos.caminho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .roteiro-estudos.caminho::before {
+        display: none;
+    }
+
+    .roteiro-estudos .card {
+        width: 60%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .roteiro-estudos .card button {
+        width: 70%;
+        font-size: 0.8em;
+        margin-top: 8px;
+        padding: 12px 22px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .roteiro-estudos .card p {
+        font-size: 1.5em;
+    }
+
+    .contatos {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contatos div {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .linkedin {
+        margin: 0;
+    }
+
+    .boletim-section {
+        position: relative;
+        display: grid;
+        place-items: center;
+    }
+
+    .fp-iframe {
+        position: static;
+
+        width: 80%;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .cta-button {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+
+    .nav-menu li a {
+        font-size: 14px;
+    }
+
+    .conquistas .fade {
+        background-size: cover;
+    }
+
+    .roteiro-estudos.caminho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .roteiro-estudos.caminho::before {
+        display: none;
+    }
+
+    .roteiro-estudos .card {
+        width: 20%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .roteiro-estudos .card button {
+        width: 70%;
+        font-size: 0.6em;
+        margin-top: 5px;
+        padding: 10px 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+}
