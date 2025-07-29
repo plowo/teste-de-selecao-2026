@@ -50,7 +50,7 @@
 
 
 :root {
-    --cor: #093067;
+    --cor: #144391;
     --titulos: 'Comico', 'Arial', sans-serif;
     --textos1: 'Fredoka', 'Arial', sans-serif;
     --textos2: 'Encode Sans', 'Arial', sans-serif;
@@ -61,37 +61,9 @@ body {
 
 }
 
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    z-index: 999999;
-}
-
-#status {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    background-image: url(/public/src/img/loader.gif);
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
-    margin: -40px 0 0 -100px;
-}
-
-#status img {
-    text-align: center;
-    margin-top: -80px;
-}
-
 /* Header Styles */
 .headerof {
-    background-color: #4A90E2;
+    background-color: #4369A7;
     font-family: var(--titulos);
     padding: 15px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -105,9 +77,7 @@ body {
 
 }
 
-.headerof img {
-    width: 50%;
-}
+
 
 /* Classe para quando a página for rolada */
 .header-scrolled {
@@ -119,7 +89,7 @@ body {
 }
 
 .header-scrolled img {
-    width: 30%;
+    width: 50%;
     padding: 0;
 }
 
@@ -137,11 +107,6 @@ body {
     justify-content: space-between;
 
     align-items: center;
-
-}
-
-.logo {
-    padding: 10px;
 
 }
 
@@ -191,7 +156,7 @@ body {
 }
 
 .hero-container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     display: grid;
@@ -224,7 +189,7 @@ body {
 .hero-title {
     font-size: 48px;
     font-weight: 900;
-    color: #2c3e50;
+    color: var(--cor);
     margin-bottom: 20px;
     font-family: var(--titulos);
     line-height: 1.1;
@@ -489,7 +454,7 @@ body {
 
 
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     .carousel-slide {
         height: 100%;
     }
@@ -506,7 +471,8 @@ body {
 .ins {
     margin: 0;
     padding: 0;
-    background-color: #002F6C;
+    background-color: var(--cor);
+    text-align: center;
 }
 
 .fadeblue {
@@ -520,7 +486,7 @@ body {
 }
 
 .txt {
-    background-color: #002F6C;
+    background-color: var(--cor);
     align-items: center;
     justify-content: space-around;
 
@@ -566,14 +532,15 @@ body {
     /* ou o tamanho desejado */
     margin: 0 auto;
     /* CENTRALIZA a div toda */
-    background-color: #002f6c;
+    background-color: var(--cor);
+    text-align: center;
 }
 
-.card {
+.unidades .card {
     flex: 0 1 calc(45%);
     background-color: white;
     width: 400px;
-    max-width: 300px;   
+    max-width: 300px;
 
     box-sizing: border-box;
 
@@ -592,61 +559,73 @@ body {
 }
 
 
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  border-radius: inherit;
-  border: 12px solid transparent;
-  background: linear-gradient(90deg, #facc15, #facc15) border-box;
-  mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0) border-box;
-  -webkit-mask-composite: destination-out;
-          mask-composite: exclude;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.8s ease;
+.unidades .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    border: 12px solid transparent;
+    background: linear-gradient(90deg, #facc15, #facc15) border-box;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) border-box;
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.8s ease;
 }
 
-.card:hover::before {
-  opacity: 1;
-  animation: borderDraw 1s forwards ease;
+.unidades .card:hover::before {
+    opacity: 1;
+    animation: borderDraw 1s forwards ease;
 }
 
 @keyframes borderDraw {
-  0% {
-    clip-path: inset(100% 0 0 0); /* de cima pra baixo */
-  }
-  25% {
-    clip-path: inset(0 100% 0 0); /* direita */
-  }
-  50% {
-    clip-path: inset(0 0 100% 0); /* baixo */
-  }
-  75% {
-    clip-path: inset(0 0 0 100%); /* esquerda */
-  }
-  100% {
-    clip-path: inset(0 0 0 0); /* tudo visível */
-}
+    0% {
+        clip-path: inset(100% 0 0 0);
+        /* de cima pra baixo */
+    }
+
+    25% {
+        clip-path: inset(0 100% 0 0);
+        /* direita */
+    }
+
+    50% {
+        clip-path: inset(0 0 100% 0);
+        /* baixo */
+    }
+
+    75% {
+        clip-path: inset(0 0 0 100%);
+        /* esquerda */
+    }
+
+    100% {
+        clip-path: inset(0 0 0 0);
+        /* tudo visível */
+    }
 }
 
-.card h3 {
+.unidades .card h3 {
     text-align: center;
     font-size: 1.2rem;
-    color: #002f6c;
+    color: var(--cor);
     padding-top: 10px;
     margin-bottom: 10px;
 
     text-transform: uppercase;
 }
 
-.card .texto {
+.unidades .card .texto {
     display: flex;
     align-items: start;
-    color: #002f6c;
+    color: var(--cor);
     flex-direction: column;
     justify-content: center;
 
@@ -667,11 +646,11 @@ body {
     color: #002f6c;
 }
 
-.card p {
+.unidades .card p {
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 600;
-    color: #002f6c;
+    color: var(--cor);
     margin-top: 0;
     line-height: 1.2;
     padding: 10px;
@@ -679,9 +658,9 @@ body {
     padding: 10;
 }
 
-.card .btn {
+.unidades .card .btn {
     margin: 10px;
-    background-color: #002f6c;
+    background-color: var(--cor);
     color: white;
     padding: 10px 15px;
     width: 200px;
@@ -694,22 +673,22 @@ body {
     text-align: center;
 }
 
-.card .tag {
+.unidades .card .tag {
     background: #fcd800;
-    color: #001c44;
+    color: var(--cor);
     font-family: var(--titulos);
     font-weight: lighter;
     padding: 8px 16px;
-    border: #001c44;
+    border: var(--cor);
     align-self: first baseline;
     transform: rotate(-8deg);
 }
 
 
-.card h5 {
+.unidades .card h5 {
     text-transform: uppercase;
     font-size: 10px;
-    color: #003c87;
+    color: var(--cor);
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 10px;
@@ -852,7 +831,7 @@ body {
     padding: 20px 30px;
 
     min-width: 450px;
-    min-height: 250px;
+    min-height: 200px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     align-items: start;
@@ -886,6 +865,7 @@ body {
     margin-top: 15px;
     padding: 20px 40px;
     background: #ffd600;
+    border: 6px solid #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -893,7 +873,9 @@ body {
     font-family: var(--titulos);
     text-transform: uppercase;
 }
-
+.roteiro-estudos .card:hover{
+    border: 6px solid #ffd600;
+}
 .roteiro-estudos .card button:hover {
     background: #ffb800;
 }
@@ -1009,7 +991,7 @@ footer .linkedin {
     margin-left: -10px;
 }
 
-/* Decorative Elements */
+/* Decorative Elements 
 .hero::before {
     content: '';
     position: absolute;
@@ -1019,8 +1001,92 @@ footer .linkedin {
     height: 200%;
     background: radial-gradient(circle, rgba(74, 144, 226, 0.1) 0%, transparent 70%);
     z-index: 1;
-}
+}*/
+@media (max-width: 1024px) and (min-width: 769px) {
+    .boletim-section {
+        position: relative;
+        background-color: white;
+        height: auto;
+        padding: 40px 0;
+        overflow: visible;
+    }
 
+    .boletim-section .header {
+        margin-left: 0;
+        padding: 0 40px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .boletim-section .header div {
+        margin-left: 0;
+        padding: 8px 0;
+        text-align: left;
+        width: 100%;
+    }
+
+    .boletim-section .titulo h1 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        text-align: left;
+        color: #1e5aa8;
+        font-weight: bold;
+    }
+
+    .boletim-section .subtitulo p {
+        font-size: 17px;
+        line-height: 1.4;
+        margin-bottom: 25px;
+        color: #666;
+        text-align: left;
+    }
+
+    .boletim-section .botao-container {
+        padding: 0 40px;
+        margin-bottom: 40px;
+    }
+
+    .boletim-section .botao-container div {
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .boletim-section .botao-confira button {
+        position: static;
+        left: auto;
+        margin-left: 0;
+        padding: 15px 30px;
+        font-size: 18px;
+        width: auto;
+        max-width: 100%;
+        display: inline-block;
+        text-align: center;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    .boletim-section .botao-confira button:hover {
+        padding: 15px 30px;
+        transition: background-color 0.3s ease;
+    }
+
+    .fp-iframe {
+        position: static;
+        width: calc(100% - 80px);
+        margin: 0 40px;
+        height: 500px;
+        max-width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        left: auto;
+        top: auto;
+        bottom: auto;
+    }
+}
 @media (max-width: 900px) {
     .roteiro-estudos .card-1 {
         right: 0px;
@@ -1048,13 +1114,13 @@ footer .linkedin {
     }
 
     .roteiro-estudos .card {
-        width: 100%;
+        width: 50%;
         text-align: center;
         align-items: center;
     }
 
     .roteiro-estudos .card button {
-        width: 100%;
+
         font-size: 0.9em;
         margin-top: 10px;
         padding: 14px 24px;
@@ -1103,23 +1169,94 @@ footer .linkedin {
         position: relative;
     }
 
+    .hero {
+        min-height: 100vh;
+        /* Garante altura suficiente */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
     .hero-container {
-        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 400px;
+        /* Limita largura máxima */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 30px;
+        padding: 0 20px;
         text-align: center;
-        padding: 40px 20px;
+    }
+
+    .hero-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        order: 1;
+        /* Garante que o conteúdo apareça primeiro */
     }
 
     .hero-title {
-        font-size: 32px;
+        font-size: 28px;
+        /* Reduz tamanho da fonte */
+        line-height: 1.2;
+        margin-bottom: 15px;
     }
 
     .hero-subtitle {
-        font-size: 16px;
+        font-size: 14px;
+        /* Reduz tamanho da fonte */
+        margin-bottom: 20px;
+        line-height: 1.4;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 6px 12px;
+        margin-bottom: 20px;
+    }
+
+    .cta-button {
+        padding: 14px 28px;
+        font-size: 14px;
+        width: auto;
+        min-width: 200px;
+        /* Garante largura mínima */
     }
 
     .hero-image {
-        order: -1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 2;
+        /* Garante que a imagem apareça depois */
+    }
+
+    .hero-image .image-container {
+        width: 280px;
+        /* Tamanho fixo para mobile */
+        height: 210px;
+        /* Mantém proporção */
+        max-width: 90%;
+        /* Garante que não ultrapasse a tela */
+    }
+
+    .hero-image .image-container:hover {
+        transform: none;
+        /* Remove efeito hover no mobile */
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
     }
 
     .conquistas .fade {
@@ -1138,17 +1275,14 @@ footer .linkedin {
         object-fit: contain;
     }
 
-    .card {
+    .unidades .card {
         flex: 0 1 100%;
         /* 1 por linha */
         aspect-ratio: 1 / 1;
+        text-align: center;
         /* ainda quadrado no mobile */
     }
 
-    .card {
-        width: 90%;
-        height: auto;
-    }
 
     .roteiro-estudos .card-1 {
         right: 0px;
@@ -1166,7 +1300,7 @@ footer .linkedin {
         left: 0px;
     }
 
-    .roteiro-estudos.caminho {
+    .roteiro-estudos .caminho {
         flex-direction: column;
         gap: 20px;
     }
@@ -1176,22 +1310,25 @@ footer .linkedin {
     }
 
     .roteiro-estudos .card {
-        width: 60%;
+        -ms-transform-origin-x: 50%;
         text-align: center;
         align-items: center;
+        padding: 0;
+        margin: 10px;
     }
 
     .roteiro-estudos .card button {
-        width: 70%;
+
         font-size: 0.8em;
-        margin-top: 8px;
-        padding: 12px 22px;
+
         text-align: center;
         align-items: center;
     }
 
-    .roteiro-estudos .card p {
-        font-size: 1.5em;
+    .roteiro-estudos .caminho .card {
+        min-width: 80%;
+        min-height: auto;
+        padding: 10px;
     }
 
     .contatos {
@@ -1217,27 +1354,119 @@ footer .linkedin {
 
     .boletim-section {
         position: relative;
-        display: grid;
-        place-items: center;
+        background-color: white;
+        height: auto;
+        /* Altura automática para mobile */
+        padding: 30px 0;
+        overflow: visible;
+        /* Permite que o conteúdo seja visível */
+    }
+
+    .boletim-section .header {
+        margin-left: 0;
+        /* Remove margem lateral */
+        padding: 0 20px;
+        /* Adiciona padding interno */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .boletim-section .header div {
+        margin-left: 0;
+        /* Remove margem lateral */
+        padding: 5px 0;
+        /* Reduz padding vertical */
+        text-align: left;
+        width: 100%;
+    }
+
+    .boletim-section .titulo h1 {
+        font-size: 24px;
+        /* Reduz tamanho da fonte */
+        line-height: 1.2;
+        margin-bottom: 10px;
+        text-align: left;
+        color: #1e5aa8;
+        font-weight: bold;
+    }
+
+    .boletim-section .subtitulo p {
+        font-size: 16px;
+        /* Reduz tamanho da fonte */
+        line-height: 1.4;
+        margin-bottom: 20px;
+        color: #666;
+        text-align: left;
+    }
+
+    .boletim-section .botao-container {
+        padding: 0 20px;
+        /* Adiciona padding lateral */
+        margin-bottom: 30px;
+    }
+
+    .boletim-section .botao-container div {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .boletim-section .botao-confira button {
+        position: static;
+        /* Remove posicionamento absoluto */
+        left: auto;
+        margin-left: 0;
+        padding: 14px 24px;
+        font-size: 16px;
+        /* Reduz tamanho da fonte */
+        width: auto;
+        max-width: 100%;
+        display: inline-block;
+        text-align: center;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    .boletim-section .botao-confira button:hover {
+        padding: 14px 24px;
+        /* Mantém padding consistente no hover */
+        transition: background-color 0.3s ease;
     }
 
     .fp-iframe {
         position: static;
+        /* Remove posicionamento absoluto */
+        width: calc(100% - 40px);
+        /* Largura total menos margens */
+        margin: 0 20px;
+        /* Margens laterais */
+        height: 400px;
+        /* Altura fixa adequada para mobile */
+        max-width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        /* Adiciona bordas arredondadas */
+        left: auto;
+        top: auto;
+        bottom: auto;
+    }
 
-        width: 80%;
-
+    /* Container para organizar melhor o layout */
+    .boletim-content-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
 }
 
 @media (max-width: 480px) {
-    .hero-title {
-        font-size: 28px;
-    }
 
-    .hero-subtitle {
-        font-size: 14px;
-    }
 
     .cta-button {
         padding: 14px 28px;
@@ -1252,28 +1481,40 @@ footer .linkedin {
         background-size: cover;
     }
 
-    .roteiro-estudos.caminho {
-        flex-direction: column;
-        gap: 20px;
+
+}
+/* === RESPONSIVO PARA TABLET === */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .header-container {
+        padding: 0 15px;
+        max-width: 100%;
     }
 
-    .roteiro-estudos.caminho::before {
-        display: none;
+    .nav-menu {
+        gap: 25px; /* Reduz espaçamento entre itens */
     }
 
-    .roteiro-estudos .card {
-        width: 20%;
-        text-align: center;
-        align-items: center;
+    .nav-menu li a {
+        font-size: 14px; /* Reduz tamanho da fonte */
+        padding-right: 3px;
+        letter-spacing: -0.5px; /* Compacta um pouco mais */
     }
 
-    .roteiro-estudos .card button {
-        width: 70%;
-        font-size: 0.6em;
-        margin-top: 5px;
-        padding: 10px 20px;
-        text-align: center;
-        align-items: center;
+    /* Ajusta logo se necessário */
+    .logo img {
+        max-height: 45px; /* Reduz altura da logo se existir */
+    }
+}
+
+/* === RESPONSIVO PARA TABLETS MENORES === */
+@media (max-width: 900px) and (min-width: 769px) {
+    .nav-menu {
+        gap: 15px; /* Reduz ainda mais o espaçamento */
     }
 
+    .nav-menu li a {
+        font-size: 10px; /* Fonte ainda menor */
+        letter-spacing: -0.8px;
+        padding-right: 2px;
+    }
 }

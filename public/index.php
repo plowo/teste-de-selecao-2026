@@ -35,15 +35,15 @@
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="hero-container">
-            <div class="hero-content" data-aos="flip-left">
+            <div class="hero-content">
                 <div class="badge"><i class="fa-solid fa-graduation-cap"></i>Teste de seleção 2026</div>
-                <h1 class="hero-title" data-aos="zoom-in-up">
+                <h1 class="hero-title">
                     INSCRIÇÕES<br>ON-LINE</h1>
                 <p class="hero-subtitle">VOCÊ E SEU FILHO<br>DE OLHO NO FUTURO</p>
                 <a href="#inscricoes" class="cta-button hvr-grow-shadow">INSCREVA-SE</a>
             </div>
             <!-- === ALTERAÇÕES NO HTML PARA HOVER DA IMAGEM === -->
-            <div class="hero-image" data-aos="flip-up">
+            <div class="hero-image" >
                 <!-- NOVO: Container wrapper para controlar hover -->
                 <div class="image-container">
                     <!-- MODIFICADO: Adicionada classe 'image-default' -->
@@ -56,7 +56,7 @@
         </div>
     </section>
     <!-- Grandes Conquistas -->
-    <section class="conquistas" id="conquistas" data-aos="zoom-in">
+    <section class="conquistas" id="conquistas">
 
         <div class="fade"></div>
 
@@ -124,7 +124,7 @@
             <p>Selecione abaixo a sede que deseja fazer sua inscrição:</p>
         </div>
         <div class="unidades">
-            <div class="card" data-aos="zoom-in-up">
+            <div class="card">
                 <span class="tag hvr-grow-shadow">Nova Sede</span>
                 <h3>ARI LUCIANO CARNEIRO</h3>
                 <div class="texto">
@@ -141,7 +141,7 @@
                 <a href="#" class="btn hvr-grow-shadow">Inscreva-se</a>
             </div>
 
-            <div class="card" data-aos="zoom-in-up">
+            <div class="card">
                 <h3>ARI ALDEOTA</h3>
                 <div class="texto">
 
@@ -159,7 +159,7 @@
 
                 <a href="#" class="btn hvr-grow-shadow">Inscreva-se</a>
             </div>
-            <div class="card" data-aos="zoom-in-up">
+            <div class="card">
                 <h3>Ari Washington Soares</h3>
                 <div class="texto">
                     <div class="icontxt"><i class="fa-solid fa-graduation-cap"></i>
@@ -173,7 +173,7 @@
                 </div>
                 <a href="#" class="btn hvr-grow-shadow">Inscreva-se</a>
             </div>
-            <div class="card" data-aos="zoom-in-up">
+            <div class="card">
                 <h3>Ari Washington Soares</h3>
                 <h5>(turmas olímpicas)</h5>
                 <div class="texto">
@@ -190,7 +190,7 @@
                 </div>
                 <a href="#" class="btn hvr-grow-shadow">Inscreva-se</a>
             </div>
-            <div class="card" data-aos="zoom-in-up">
+            <div class="card">
                 <h3>ARI ALDEOTA INFANTIL</h3>
                 <div class="texto">
                     <div class="icontxt"><i class="fa-solid fa-graduation-cap"></i>
@@ -200,7 +200,7 @@
                 </div>
                 <a href="#" class="btn hvr-grow-shadow">Inscreva-se</a>
             </div>
-            <div class="card" data-aos="zoom-in-up">
+            <div class="card">
                 <h3>Ari Major Facundo</h3>
                 <div class="texto">
                     <div class="icontxt"><i class="fa-solid fa-graduation-cap"></i><p> Do 6º ao 9º Ano do Ensino Fundamental</p></div>
@@ -210,7 +210,7 @@
                 </div>
                 <a href="#" class="btn hvr-grow-shadow">Inscreva-se</a>
             </div>
-            <div class="card" data-aos="zoom-in-up">
+            <div class="card">
                 <h3>ARI DUQUE DE CAXIAS</h3>
                 <div class="texto">
                     <div class="icontxt"><i class="fa-solid fa-graduation-cap"></i><p> Ensino Médio</p></div>
@@ -222,9 +222,9 @@
         </div>
 
     </section>
-    <div class="fadeblue1"></div>
+    <div class="fadeblue1"  id="boletim"></div>
     <!-- Boletim Informativo -->
-    <section class="boletim-section" id="boletim">
+    <section class="boletim-section">
 
         <div class="header">
             <div>
@@ -258,22 +258,22 @@
         <h3>-------- TESTE DE SELEÇÃO --------</h3>
         <div class="caminho">
 
-            <div class="card card-1" data-aos="zoom-in-right">
+            <div class="card card-1">
                 <p>DO 1º AO 5º ANO<br>DO ENSINO FUNDAMENTAL I</p>
                 <button class="hvr-grow-shadow">Clique e Confira</button>
             </div>
 
-            <div class="card card-2" data-aos="zoom-in-left">
+            <div class="card card-2">
                 <p>DO 6º AO 9º ANO<br>DO ENSINO FUNDAMENTAL II</p>
                 <button class="hvr-grow-shadow">Clique e Confira</button>
             </div>
 
-            <div class="card card-3" data-aos="zoom-in-right">
+            <div class="card card-3">
                 <p>DA 1º À 3º ANO<br>DO ENSINO MÉDIO</p>
                 <button class="hvr-grow-shadow">Clique e Confira</button>
             </div>
 
-            <div class="card card-4" data-aos="zoom-in-left">
+            <div class="card card-4">
                 <p>ITA/IME</p>
                 <button class="hvr-grow-shadow">Clique e Confira</button>
             </div>
@@ -282,28 +282,28 @@
     <div class="divisoria"></div>
     <!-- Contatos -->
     <section class="contatos" id="contatos">
-        <div data-aos="zoom-in">
+        <div>
             <h1 class="hvr-grow-shadow">Ari Aldeota</h1>
             <p><a href="tel:+558534868405" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3486.8405</a>
             </p>
             <p>Rua Monsenhor Catão, 1655</p>
             <p>Aldeota - Fortaleza-CE</p>
         </div>
-        <div data-aos="zoom-in">
+        <div>
             <h1 class="hvr-grow-shadow">Ari - Aldeota Infantil</h1>
             <p><a href="tel:+558530448901" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3044.8901</a>
             </p>
             <p>Rua Vicente Linhares, 1470</p>
             <p>Aldeota - Fortaleza-CE</p>
         </div>
-        <div data-aos="zoom-in">
+        <div>
             <h1 class="hvr-grow-shadow">Ari - Duque de Caxias</h1>
             <p><a href="tel:+558532552909" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3255-2909</a>
             </p>
             <p>Av. Duque de Caxias, 519</p>
             <p>Centro - Fortaleza-CE</p>
         </div>
-        <div data-aos="zoom-in">
+        <div>
             <h1 class="hvr-grow-shadow">Ari - Major Facundo</h1>
             <p><a href="tel:+558532552962" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3255-2962</a>
             </p>
@@ -312,21 +312,21 @@
             <p>Rua Major Facundo, 980</p>
             <p>Centro - Fortaleza-CE</p>
         </div>
-        <div data-aos="zoom-in">
+        <div>
             <h1 class="hvr-grow-shadow">Ari - Mário Mamede</h1>
             <p><a href="tel:+558535216040" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3521-6040</a>
             </p>
             <p>Rua José Mário Mamede, 200</p>
             <p>Edson Queiroz - Fortaleza-CE</p>
         </div>
-        <div data-aos="zoom-in">
+        <div>
             <h1 class="hvr-grow-shadow">Ari - Washington Soares</h1>
             <p><a href="tel:+558534772007" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3477-2007</a>
             </p>
             <p>Av. Washington Soares, 3737</p>
             <p>Edson Queiroz - Fortaleza-CE</p>
         </div>
-        <div data-aos="zoom-in">
+        <div>
             <h1 class="hvr-grow-shadow">Ari - Luciano Carneiro</h1>
             <p></p>
             <p>R. Santa Quitéria, 50</p>
@@ -335,7 +335,7 @@
     </section>
     <!-- Footer-->
     <footer class="footer">
-        <div class="logo" data-aos="flip-up"><a href="https://aridesa.com.br" target="_blank"><img
+        <div class="logo"><a href="https://aridesa.com.br" target="_blank"><img
                     src="https://aridesa.com.br/wp-content/uploads/elementor/thumbs/logoBraca-nu3ja7j6x022qljnb0o643t29e8jw6upr2pe442v2e.png"
                     alt=""></a></div>
         <div class="social"><a href="https://www.instagram.com/aridesa" target="_blank"><i
