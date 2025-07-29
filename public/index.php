@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARI - Inscrições Online</title>
-    
+    <title>Teste de Seleção 2026</title>
+    <link rel="shortcut icon" type="imagex/png" href="src/img/Logo-Ari-azul.ico">
     <link rel="stylesheet" href="src/css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="src/Hover-master/css/hover.css" rel="stylesheet" media="all">
@@ -24,7 +24,7 @@
                     <li><a href="#hero" class="hvr-underline-from-center"> PÁGINA INICIAL </a></li>
                     <li><a href="#conquistas" class="hvr-underline-from-center"style="padding-left: 5px;"> GRANDES CONQUISTAS </a></li>
                     <li><a href="#inscricoes" class="hvr-underline-from-center"> INSCRIÇÕES </a></li>
-                    <li><a href="#entrevista" class="hvr-underline-from-center"> ENTREVISTA </a></li>
+                    <li><a href="https://sisa.aridesa.com.br" class="hvr-underline-from-center"> ENTREVISTA </a></li>
                     <li><a href="#boletim" class="hvr-underline-from-center"style="padding-left: 5px;"> BOLETIM INFORMATIVO </a></li>
                     <li><a href="#roteiro" class="hvr-underline-from-center" style="padding-left: 5px;"> ROTEIRO DE ESTUDOS </a></li>
                     <li><a href="#contatos" class="hvr-underline-from-center" style="padding-left: 5px;"> CONTATOS </a></li>
@@ -283,28 +283,28 @@
     <!-- Contatos -->
     <section class="contatos" id="contatos">
         <div>
-            <h1 class="hvr-grow-shadow">Ari Aldeota</h1>
+            <h1 class="hvr-grow-shadow"><a href="https://aridesa.com.br/sedes-ari/#ad" target="_blank">Ari Aldeota</a></h1>
             <p><a href="tel:+558534868405" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3486.8405</a>
             </p>
             <p>Rua Monsenhor Catão, 1655</p>
             <p>Aldeota - Fortaleza-CE</p>
         </div>
         <div>
-            <h1 class="hvr-grow-shadow">Ari - Aldeota Infantil</h1>
+            <h1 class="hvr-grow-shadow"><a href="https://aridesa.com.br/sedes-ari/#adi" target="_blank">Ari - Aldeota Infantil</a></h1>
             <p><a href="tel:+558530448901" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3044.8901</a>
             </p>
             <p>Rua Vicente Linhares, 1470</p>
             <p>Aldeota - Fortaleza-CE</p>
         </div>
         <div>
-            <h1 class="hvr-grow-shadow">Ari - Duque de Caxias</h1>
+            <h1 class="hvr-grow-shadow"><a href="https://aridesa.com.br/sedes-ari/#dc" target="_blank">Ari - Duque de Caxias</a></h1>
             <p><a href="tel:+558532552909" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3255-2909</a>
             </p>
             <p>Av. Duque de Caxias, 519</p>
             <p>Centro - Fortaleza-CE</p>
         </div>
         <div>
-            <h1 class="hvr-grow-shadow">Ari - Major Facundo</h1>
+            <h1 class="hvr-grow-shadow"><a href="https://aridesa.com.br/sedes-ari/#mj" target="_blank">Ari - Major Facundo</a></h1>
             <p><a href="tel:+558532552962" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3255-2962</a>
             </p>
             </p>
@@ -313,14 +313,14 @@
             <p>Centro - Fortaleza-CE</p>
         </div>
         <div>
-            <h1 class="hvr-grow-shadow">Ari - Mário Mamede</h1>
+            <h1 class="hvr-grow-shadow"><a href="https://aridesa.com.br/sedes-ari/#mm" target="_blank">Ari - Mário Mamede</a></h1>
             <p><a href="tel:+558535216040" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3521-6040</a>
             </p>
             <p>Rua José Mário Mamede, 200</p>
             <p>Edson Queiroz - Fortaleza-CE</p>
         </div>
         <div>
-            <h1 class="hvr-grow-shadow">Ari - Washington Soares</h1>
+            <h1 class="hvr-grow-shadow"><a href="https://aridesa.com.br/sedes-ari/#ws" target="_blank">Ari - Washington Soares</a></h1>
             <p><a href="tel:+558534772007" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3477-2007</a>
             </p>
             <p>Av. Washington Soares, 3737</p>
@@ -337,7 +337,7 @@
     <footer class="footer">
         <div class="logo"><a href="https://aridesa.com.br" target="_blank"><img
                     src="https://aridesa.com.br/wp-content/uploads/elementor/thumbs/logoBraca-nu3ja7j6x022qljnb0o643t29e8jw6upr2pe442v2e.png"
-                    alt=""></a></div>
+                    alt="Logo de cor branca Ari de Sá"></a></div>
         <div class="social"><a href="https://www.instagram.com/aridesa" target="_blank"><i
                     class="fa-brands fa-instagram fa-2x"></i></a></div>
         <div class="social"><a href="https://www.youtube.com/user/aridesaoficial" target="_blank"><i

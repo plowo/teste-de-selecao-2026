@@ -949,7 +949,9 @@ body {
     margin-bottom: 6px;
     padding: 0 8px 0 8px;
 }
-
+.contatos div h1 a{
+    color: #001c44;
+}
 
 
 .contatos div p {
@@ -1517,4 +1519,33 @@ footer .linkedin {
         letter-spacing: -0.8px;
         padding-right: 2px;
     }
+}
+
+
+body {
+  --sb-track-color: #232e33;
+  --sb-thumb-color: #3783da;
+  --sb-size: 14px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
 }
