@@ -24,7 +24,7 @@
                     <li><a href="#hero" class="hvr-underline-from-center"> PÁGINA INICIAL </a></li>
                     <li><a href="#conquistas" class="hvr-underline-from-center"style="padding-left: 5px;"> GRANDES CONQUISTAS </a></li>
                     <li><a href="#inscricoes" class="hvr-underline-from-center"> INSCRIÇÕES </a></li>
-                    <li><a href="https://sisa.aridesa.com.br" class="hvr-underline-from-center"> ENTREVISTA </a></li>
+                    <li><a href="https://sisa.aridesa.com.br" class="hvr-underline-from-center" target="_onblank"> ENTREVISTA </a></li>
                     <li><a href="#boletim" class="hvr-underline-from-center"style="padding-left: 5px;"> BOLETIM INFORMATIVO </a></li>
                     <li><a href="#roteiro" class="hvr-underline-from-center" style="padding-left: 5px;"> ROTEIRO DE ESTUDOS </a></li>
                     <li><a href="#contatos" class="hvr-underline-from-center" style="padding-left: 5px;"> CONTATOS </a></li>
@@ -115,8 +115,9 @@
 
 
     </section>
+    
     <div class="fadeblue"></div>
-    <section class="ins" class="" id="inscricoes">
+    <section class="ins" style="margin-top: 0;" id="inscricoes">
 
         <div class="txt">
             <h1>INSCRIÇÕES</h1>
@@ -304,11 +305,10 @@
             <p>Centro - Fortaleza-CE</p>
         </div>
         <div>
-            <h1 class="hvr-grow-shadow"><a href="https://aridesa.com.br/sedes-ari/#mj" target="_blank">Ari - Major Facundo</a></h1>
+            <h1 class="hvr-grow-shadow"><a href="https://aridesa.com.br/sedes-ari/#mf" target="_blank">Ari - Major Facundo</a></h1>
             <p><a href="tel:+558532552962" target="_blank"><i class="fa-solid fa-square-phone"></i> (85) 3255-2962</a>
             </p>
-            </p>
-            </p>
+            
             <p>Rua Major Facundo, 980</p>
             <p>Centro - Fortaleza-CE</p>
         </div>
