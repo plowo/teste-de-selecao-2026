@@ -47,9 +47,9 @@
                 <!-- NOVO: Container wrapper para controlar hover -->
                 <div class="image-container">
                     <!-- MODIFICADO: Adicionada classe 'image-default' -->
-                    <img class="image-default" src="src/img/FRAME1.png">
+                    <img class="image-default" src="src/img/hero1.png">
                     <!-- NOVO: Segunda imagem para efeito hover -->
-                    <img class="image-hover" src="src/img/FRAME2.png" alt="Estado hover da imagem">
+                    <img class="image-hover" src="src/img/hero2.png" alt="Estado hover da imagem">
                 </div>
             </div>
             <!-- === FIM DAS ALTERAÇÕES NO HTML === -->
@@ -125,23 +125,6 @@
             <p>Selecione abaixo a sede que deseja fazer sua inscrição:</p>
         </div>
         <div class="unidades">
-            <div class="card">
-                <span class="tag hvr-grow-shadow">Nova Sede</span>
-                <h3>ARI LUCIANO CARNEIRO</h3>
-                <div class="texto">
-                    <div class="icontxt"><i class="fa-solid fa-graduation-cap"></i>
-                        <p> Da educação infantil ao 1º ano do ensino fundamental
-                        </p>
-                    </div>
-                    <div class="icontxt">
-                        <i class="fa-solid fa-map-pin"></i>
-                        <p> R. Santa Quitéria, 50</p>
-                    </div>
-
-                </div>
-                <a href="#" class="btn hvr-grow-shadow">Inscreva-se</a>
-            </div>
-
             <div class="card">
                 <h3>ARI ALDEOTA</h3>
                 <div class="texto">
@@ -326,12 +309,7 @@
             <p>Av. Washington Soares, 3737</p>
             <p>Edson Queiroz - Fortaleza-CE</p>
         </div>
-        <div>
-            <h1 class="hvr-grow-shadow">Ari - Luciano Carneiro</h1>
-            <p></p>
-            <p>R. Santa Quitéria, 50</p>
-            <p>Parreão - Fortaleza-CE</p>
-        </div>
+       
     </section>
     <!-- Footer-->
     <footer class="footer">
